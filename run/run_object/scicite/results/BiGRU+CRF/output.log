@@ -1,0 +1,16 @@
+标准输出:
+
+
+错误输出:
+D:\python\Lib\site-packages\sklearn\utils\_param_validation.py:14: UserWarning: A NumPy version >=1.22.4 and <2.3.0 is required for this version of SciPy (detected version 2.4.4)
+  from scipy.sparse import csr_matrix, issparse
+Traceback (most recent call last):
+  File "D:\PyCharm\PyCharm Community Edition 2023.2.5\引文内容分析-基于微调\传统模型-验证集\BiGRU+CRF\bigru_crf.py", line 331, in <module>
+    main()
+  File "D:\PyCharm\PyCharm Community Edition 2023.2.5\引文内容分析-基于微调\传统模型-验证集\BiGRU+CRF\bigru_crf.py", line 253, in main
+    model = BiGRUCRF(vocab_size, embedding_dim, hidden_size, len(label_list), dropout_rate).to(device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PyCharm\PyCharm Community Edition 2023.2.5\引文内容分析-基于微调\传统模型-验证集\BiGRU+CRF\bigru_crf.py", line 66, in __init__
+    self.crf = CRF(num_labels, batch_first=True)
+               ^^^
+NameError: name 'CRF' is not defined

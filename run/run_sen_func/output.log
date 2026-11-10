@@ -1,0 +1,8 @@
+标准输出:
+
+
+错误输出:
+Traceback (most recent call last):
+  File "/root/autodl-tmp/baseline/model/BERT+Bi-LSTM+CRF/bert_bilstm_crf.py", line 8, in <module>
+    from torchcrf import CRF
+ModuleNotFoundError: No module named 'torchcrf'
